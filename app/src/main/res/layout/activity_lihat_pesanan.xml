@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatPesanan">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="DETAIL PESANAN"
+        android:textColor="#0E1113"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="32dp"
+        android:background="#039BE5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/d_nama"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:text="Nama         : "
+        android:textColor="#020A0E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/d_meja"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="No meja     :"
+        android:textColor="#121414"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/d_nama"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/d_nama"
+        app:layout_constraintTop_toBottomOf="@+id/d_nama" />
+
+    <TextView
+        android:id="@+id/d_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Tanggal      :"
+        android:textColor="#070A0C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/d_meja"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/d_meja"
+        app:layout_constraintTop_toBottomOf="@+id/d_meja"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#A8FFFFFF"
+        android:text="Pesanan     :"
+        android:textColor="#0D1011"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/d_tanggal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/d_tanggal"
+        app:layout_constraintTop_toBottomOf="@+id/d_harga" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#039BE5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/d_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#039BE5"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ubah"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" android:text="tambah pesanan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+    <Button
+        android:id="@+id/back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:text="kembali"
+        app:layout_constraintBottom_toBottomOf="@+id/ubah"
+        app:layout_constraintEnd_toStartOf="@+id/ubah"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ubah"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="412dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="#039BE5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/d_harga"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#9FFFFFFF"
+        android:text="Total harga:"
+        android:textColor="#070809"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_tanggal" />
+
+</android.support.constraint.ConstraintLayout>

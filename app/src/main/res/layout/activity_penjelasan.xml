@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Penjelasan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minuman :"
+                android:textColor="#039BE5"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/kopihitam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Kopi Hitam" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Penjelasan: Kopi Hitam dengan dibuat dengan teknik espresso, dimana Biji kopi yang digunakan yaitu berasal dari Aceh Gayo jenis Arabika, disajikan dengan gula terpisah. " />
+
+            <CheckBox
+                android:id="@+id/kopicapuccino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Capuccino" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Paduan Kopi dengan buih susu kental serta menggunakan sirup karamel, dimana biji kopi yang digunakan berasal dari gunung puntang Jawa Barat jenis Robusta." />
+
+            <CheckBox
+                android:id="@+id/sparklingtea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Sparkling Tea" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Minuman Teh yang menggunakan daun teh dari daerah pegunungan garut dengan tambahan sari melati asli dan gula merah alami." />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#039BE5" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Makanan :"
+                android:textColor="#039BE5"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/batagor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Batagor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Penjelasan: Baso dan Tahu goreng dengan sajian bumbu kacang dan kecap khas bandung. " />
+
+            <CheckBox
+                android:id="@+id/cireng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Cireng" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Makanan ringan berupa tepung kanji goreng isi bahan dasar tempe fermentasi yang disebut oncom, disajikan dengan bumbu kacang pedas." />
+
+            <CheckBox
+                android:id="@+id/nasigoreng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Nasi Goreng" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Nasi goreng ayam yang disajikan dengan telur mata sapi disertai ayam." />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#039BE5" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dessert :"
+                android:textColor="#039BE5"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cheesecake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Cheese Cake" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Kue Tart 1 slice dengan bahan utama cream cheese dengan topping buah-buahan asli seperti anggur, jeruk, kiwi." />
+
+            <CheckBox
+                android:id="@+id/blacksalad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Black Salad" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Potongan Buah-buahan segar yang terdiri dari pepaya, jambu, melon, dan mangga. Disajikan dengan bumbu rujak kacang pedas dengan gula merah." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
